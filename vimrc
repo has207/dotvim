@@ -3,40 +3,7 @@ call pathogen#infect()
 
 set nocompatible               " be iMproved
 
-" Navigation
-"Bundle 'vim-scripts/FuzzyFinder'
-"Bundle 'spiiph/vim-space'
-"" UI Additions
-"Bundle 'mutewinter/vim-indent-guides'
-"Bundle 'dickeytk/status.vim'
-"Bundle 'scrooloose/nerdtree'
-"Bundle 'mutewinter/ir_black_mod'
-"Bundle 'Gundo'
-"" Commands
-"Bundle 'scrooloose/nerdcommenter'
-"Bundle 'tpope/vim-surround'
-"Bundle 'tpope/vim-fugitive'
-"" Automatic Helpers
-"Bundle 'IndexedSearch'
-"Bundle 'xolox/vim-session'
-"Bundle 'Raimondi/delimitMate'
-"Bundle 'scrooloose/syntastic'
-"Bundle 'ervandew/supertab'
-"Bundle 'vim-scripts/AutoComplPop'
-"" Language Additions
-"Bundle 'vim-ruby/vim-ruby'
-"Bundle 'pangloss/vim-javascript'
-"Bundle 'itspriddle/vim-jquery'
-"Bundle 'leshill/vim-json'
-"" Libraries
-"Bundle 'tpope/vim-repeat'
-
 filetype plugin indent on  " Automatically detect file types.
-
-" ----------------------------------------
-" Regular Vim Configuartion (No Plugins Needed)
-" ----------------------------------------
-:au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
 
 " ---------------
 " Color
@@ -73,6 +40,7 @@ set autowrite          " Writes on make/shell commands
 set timeoutlen=250     " Time to wait for a command (after leader for example)
 set foldlevelstart=99  " Remove folds
 set formatoptions=crql
+set autochdir
 
 " ---------------
 " Text Format
