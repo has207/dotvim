@@ -195,6 +195,14 @@ let g:statusline_order=[
       \ 'LineAndTotal',
       \ 'FilePercent']
 
+" ---------------
+" ipy.vim
+" ---------------
+let g:ipy_perform_mappings=0
+map <silent> <leader>r :python run_these_lines()<CR>
+map <silent> <leader>d :py get_doc_buffer()<CR>
+map <silent> <leader>e :py if update_subchannel_msgs(force=True): echo("vim-ipython shell updated",'Operator')<CR>
+
 " ----------------------------------------
 " Functions
 " ----------------------------------------
