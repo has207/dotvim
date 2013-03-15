@@ -1,15 +1,23 @@
-Setup:
+## Setup:
 
-git clone git@github.com:has207/dotvim.git ~/.vim
+    git clone git://github.com/has207/dotvim.git ~/.vim
+    ln -s ~/.vim/vimrc ~/.vimrc
+    cd ~/.vim
+    mkdir tmp backup
+    git submodle update --init
 
-ln -s ~/.vim/vimrc ~/.vimrc
+    # Fix syntastic (if it's still broke):
+    cd ~/.vim/bundle/syntastic && git reset --hard 8095909dcc9
 
-cd ~/.vim
+## Add plugin:
 
-git submodule init
+    cd ~/.vim
+    git submodule add http://github.com/<user>/vim-<plugin>.git bundle/<plugin>
+    git add .
+    git commit -m "Install <plugin>"
 
-git submodle update
+## Delete plugin:
 
-Fix syntastic (if it's still broke):
-
-cd ~/.vim/bundle/syntastic && git reset --hard 8095909dcc9
+    1. Remove it from .gitmodules
+    2. Remove it from .git/config
+    3. Run git rm --cached bundle/<plugin>
