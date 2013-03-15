@@ -1,6 +1,6 @@
 Setup:
 
-git clone git@github.com:has207/dotvim.git ~/.vim
+git clone git://github.com/has207/dotvim.git ~/.vim
 
 ln -s ~/.vim/vimrc ~/.vimrc
 
