@@ -55,3 +55,6 @@
 [submodule "bundle/taglist"]
 	path = bundle/taglist
 	url = http://github.com/vim-scripts/taglist.vim.git
+[submodule "bundle/go"]
+	path = bundle/go
+	url = http://github.com/haesken/vim-go.git
