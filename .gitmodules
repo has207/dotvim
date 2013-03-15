@@ -52,3 +52,6 @@
 [submodule "bundle/ipython"]
 	path = bundle/ipython
 	url = https://github.com/ivanov/vim-ipython.git
+[submodule "bundle/taglist"]
+	path = bundle/taglist
+	url = http://github.com/vim-scripts/taglist.vim.git

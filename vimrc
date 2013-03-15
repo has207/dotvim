@@ -1,3 +1,4 @@
+filetype off
 runtime bundle/pathogen/autoload/pathogen.vim
 call pathogen#infect()
 
@@ -202,6 +203,12 @@ let g:ipy_perform_mappings=0
 map <silent> <leader>r :python run_these_lines()<CR>
 map <silent> <leader>d :py get_doc_buffer()<CR>
 map <silent> <leader>e :py if update_subchannel_msgs(force=True): echo("vim-ipython shell updated",'Operator')<CR>
+
+" ---------------
+" Taglist
+" ---------------
+let Tlist_Use_Right_Window = 1
+let Tlist_Show_One_File = 1
 
 " ----------------------------------------
 " Functions
