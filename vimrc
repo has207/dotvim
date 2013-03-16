@@ -197,14 +197,6 @@ let g:statusline_order=[
       \ 'FilePercent']
 
 " ---------------
-" ipy.vim
-" ---------------
-let g:ipy_perform_mappings=0
-map <silent> <leader>r :python run_these_lines()<CR>
-map <silent> <leader>d :py get_doc_buffer()<CR>
-map <silent> <leader>e :py if update_subchannel_msgs(force=True): echo("vim-ipython shell updated",'Operator')<CR>
-
-" ---------------
 " Taglist
 " ---------------
 let Tlist_Use_Right_Window = 1
@@ -214,6 +206,10 @@ let Tlist_Show_One_File = 1
 " Screen
 " ---------------
 let g:ScreenImpl = 'Tmux'
+let g:ScreenShellHeight = 7
+let g:ScreenShellTmuxInitArgs = '-2'
+let g:ScreenShellInitialFocus = 'shell'
+let g:ScreenShellQuitOnVimExit = 0
 
 " ----------------------------------------
 " Shortcuts
