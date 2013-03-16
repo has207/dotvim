@@ -210,6 +210,11 @@ map <silent> <leader>e :py if update_subchannel_msgs(force=True): echo("vim-ipyt
 let Tlist_Use_Right_Window = 1
 let Tlist_Show_One_File = 1
 
+" ---------------
+" Screen
+" ---------------
+let g:ScreenImpl = 'Tmux'
+
 " ----------------------------------------
 " Shortcuts
 " ----------------------------------------
