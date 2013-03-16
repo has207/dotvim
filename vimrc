@@ -211,11 +211,18 @@ let Tlist_Use_Right_Window = 1
 let Tlist_Show_One_File = 1
 
 " ----------------------------------------
-" Functions
+" Shortcuts
 " ----------------------------------------
 
-" Shortcut to rapidly toggle `set list`
+" Toggle `set list`
 nmap <leader>l :set list!<CR>
 
 " Use the same symbols as TextMate for tabstops and EOLs
 set listchars=tab:▸\ ,eol:¬
+
+" ---------------
+" Other stuff
+" ---------------
+
+autocmd BufNewFile,BufRead *.proto set filetype=proto
+autocmd BufNewFile,BufRead *.borg set filetype=borg
