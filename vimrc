@@ -211,6 +211,12 @@ let g:ScreenShellTmuxInitArgs = '-2'
 let g:ScreenShellInitialFocus = 'shell'
 let g:ScreenShellQuitOnVimExit = 0
 
+" ---------------
+" Eclim
+" ---------------
+nnoremap <silent> <buffer> <leader>i :JavaImport<cr>
+nnoremap <silent> <buffer> <cr> :JavaSearchContext<cr>
+
 " ----------------------------------------
 " Shortcuts
 " ----------------------------------------
