@@ -10,7 +10,7 @@ filetype plugin indent on  " Automatically detect file types.
 " Color
 " ---------------
 set background=dark
-colorscheme ir_black_mod
+colorscheme pastel_black_256
 
 " ---------------
 " Backups
