@@ -12,7 +12,7 @@ let colors_name = "pastel_black_256"
 
 
 " General colors
-hi Normal           ctermfg=NONE        ctermbg=234         cterm=NONE
+hi Normal           ctermfg=NONE        ctermbg=NONE         cterm=NONE
 hi NonText          ctermfg=black       ctermbg=NONE        cterm=NONE
 
 hi Cursor           ctermfg=black       ctermbg=white       cterm=reverse
@@ -54,15 +54,15 @@ hi Comment          ctermfg=darkgray    ctermbg=NONE        cterm=NONE
 hi String           ctermfg=166         ctermbg=NONE        cterm=NONE
 hi Number           ctermfg=166         ctermbg=NONE        cterm=NONE
 
-hi Keyword          ctermfg=075        ctermbg=NONE        cterm=NONE
-hi PreProc          ctermfg=075        ctermbg=NONE        cterm=NONE
+hi Keyword          ctermfg=074        ctermbg=NONE        cterm=NONE
+hi PreProc          ctermfg=074        ctermbg=NONE        cterm=NONE
 hi Conditional      ctermfg=229         ctermbg=NONE        cterm=NONE
 
 hi Todo             ctermfg=166         ctermbg=NONE        cterm=NONE
 hi Constant         ctermfg=110         ctermbg=NONE        cterm=NONE
 
 hi Identifier       ctermfg=110         ctermbg=NONE        cterm=NONE
-hi Function         ctermfg=075        ctermbg=NONE        cterm=NONE
+hi Function         ctermfg=074        ctermbg=NONE        cterm=NONE
 hi Type             ctermfg=229         ctermbg=NONE        cterm=NONE
 hi Statement        ctermfg=229         ctermbg=NONE        cterm=NONE
 
@@ -116,7 +116,7 @@ hi link javaScriptNumber      Number
 
 
 " == NERDtree ==
-hi NerdTreeDir   ctermfg=075       ctermbg=NONE     cterm=NONE
+hi NerdTreeDir   ctermfg=074       ctermbg=NONE     cterm=NONE
 hi NerdTreeUp 	 ctermfg=darkgray  ctermbg=NONE     cterm=NONE
 
 
