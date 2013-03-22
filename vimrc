@@ -10,7 +10,11 @@ filetype plugin indent on  " Automatically detect file types.
 " Color
 " ---------------
 set background=dark
-colorscheme pastel_black_256
+if &t_Co == 256 && ! has("gui_running")
+  colorscheme pastel_black_256
+else
+  colorscheme default
+endif
 
 " ---------------
 " Backups
@@ -23,8 +27,8 @@ set directory=~/.vim/tmp
 " UI
 " ---------------
 set ruler  " Ruler on
-set nu  " Line numbers on
-set wrap  " Line wrapping on
+set nu     " Line numbers on
+set wrap   " Line wrapping on
 set laststatus=2  " Always show the statusline
 set cmdheight=2
 
@@ -97,6 +101,14 @@ let mapleader=","
 
 nmap <silent> <leader>s :set spell!<CR>
 nmap <silent> <leader>v :e ~/.vim/vimrc<CR>
+
+" ---------------
+" Scrolling
+" ---------------
+
+set scrolloff=8
+set sidescrolloff=15
+set sidescroll=1
 
 " ----------------------------------------
 " Auto Commands
@@ -235,4 +247,3 @@ autocmd BufNewFile,BufRead *.borg set filetype=borg
 
 " Open up grep results in a quickfix window
 autocmd QuickFixCmdPost *grep* cwindow
-

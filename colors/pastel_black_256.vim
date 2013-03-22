@@ -12,15 +12,15 @@ let colors_name = "pastel_black_256"
 
 
 " General colors
-hi Normal           ctermfg=NONE        ctermbg=NONE         cterm=NONE
+hi Normal           ctermfg=NONE        ctermbg=NONE        cterm=NONE
 hi NonText          ctermfg=black       ctermbg=NONE        cterm=NONE
 
 hi Cursor           ctermfg=black       ctermbg=white       cterm=reverse
-hi LineNr           ctermfg=darkgray    ctermbg=NONE        cterm=NONE
+hi LineNr           ctermfg=237         ctermbg=NONE        cterm=NONE
 
 hi VertSplit        ctermfg=white       ctermbg=darkgray    cterm=NONE
 hi StatusLine       ctermfg=white       ctermbg=darkgray    cterm=NONE
-hi StatusLineNC     ctermfg=gray       ctermbg=darkgray    cterm=NONE  
+hi StatusLineNC     ctermfg=gray        ctermbg=darkgray    cterm=NONE  
 
 hi Folded           ctermfg=NONE        ctermbg=NONE        cterm=NONE
 hi Title            ctermfg=NONE        ctermbg=NONE        cterm=NONE
@@ -28,8 +28,6 @@ hi Visual           ctermfg=NONE        ctermbg=237         cterm=NONE
 
 hi SpecialKey       ctermfg=NONE        ctermbg=NONE        cterm=NONE
 
-hi WildMenu         ctermfg=black       ctermbg=229         cterm=NONE
-hi PmenuSbar        ctermfg=black       ctermbg=white       cterm=NONE
 
 hi Ignore           ctermfg=NONE        ctermbg=NONE        cterm=NONE
 hi Error            ctermfg=white       ctermbg=166         cterm=NONE
@@ -39,36 +37,53 @@ hi WarningMsg       ctermfg=white       ctermbg=166         cterm=NONE
 " Message displayed in lower left, such as --INSERT--
 hi ModeMsg          ctermfg=black       ctermbg=110         cterm=BOLD
 
-if version >= 700 " Vim 7.x specific colors
-  hi CursorLine     ctermfg=NONE        ctermbg=NONE        cterm=BOLD
-  hi CursorColumn   ctermfg=NONE        ctermbg=NONE        cterm=BOLD
-  hi MatchParen     ctermfg=white       ctermbg=darkgray    cterm=NONE
-  hi Pmenu          ctermfg=black       ctermbg=138         cterm=NONE
-  hi PmenuSel       ctermfg=black       ctermbg=138         cterm=underline
-  hi PmenuThumb     ctermfg=NONE        ctermbg=darkgray    cterm=NONE
-  hi Search         ctermfg=NONE        ctermbg=NONE        cterm=underline
-endif
+hi CursorLine       ctermfg=NONE        ctermbg=NONE        cterm=BOLD
+hi CursorColumn     ctermfg=NONE        ctermbg=NONE        cterm=BOLD
+hi MatchParen       ctermfg=white       ctermbg=darkgray    cterm=NONE
+hi Pmenu            ctermfg=black       ctermbg=138         cterm=NONE
+hi PmenuSel         ctermfg=black       ctermbg=138         cterm=underline
+hi PmenuSbar        ctermfg=black       ctermbg=white       cterm=NONE
+hi PmenuThumb       ctermfg=NONE        ctermbg=darkgray    cterm=NONE
+hi Search           ctermfg=NONE        ctermbg=NONE        cterm=underline
+hi WildMenu         ctermfg=black       ctermbg=229         cterm=NONE
 
 " Syntax highlighting
-hi Comment          ctermfg=darkgray    ctermbg=NONE        cterm=NONE
+hi Comment          ctermfg=237         ctermbg=NONE        cterm=NONE
 hi String           ctermfg=166         ctermbg=NONE        cterm=NONE
 hi Number           ctermfg=166         ctermbg=NONE        cterm=NONE
 
-hi Keyword          ctermfg=074        ctermbg=NONE        cterm=NONE
-hi PreProc          ctermfg=074        ctermbg=NONE        cterm=NONE
+hi Keyword          ctermfg=074         ctermbg=NONE        cterm=NONE
+hi PreProc          ctermfg=074         ctermbg=NONE        cterm=NONE
 hi Conditional      ctermfg=229         ctermbg=NONE        cterm=NONE
 
 hi Todo             ctermfg=166         ctermbg=NONE        cterm=NONE
 hi Constant         ctermfg=110         ctermbg=NONE        cterm=NONE
 
 hi Identifier       ctermfg=110         ctermbg=NONE        cterm=NONE
-hi Function         ctermfg=074        ctermbg=NONE        cterm=NONE
+hi Function         ctermfg=074         ctermbg=NONE        cterm=NONE
 hi Type             ctermfg=229         ctermbg=NONE        cterm=NONE
 hi Statement        ctermfg=229         ctermbg=NONE        cterm=NONE
 
 hi Special          ctermfg=110         ctermbg=NONE        cterm=NONE
 hi Delimiter        ctermfg=110         ctermbg=NONE        cterm=NONE
 hi Operator         ctermfg=229         ctermbg=NONE        cterm=NONE
+
+
+" == NERDtree ==
+hi NerdTreeDir   ctermfg=074       ctermbg=NONE     cterm=NONE
+hi NerdTreeUp 	 ctermfg=darkgray  ctermbg=NONE     cterm=NONE
+
+
+" == Diff ==
+hi DiffAdd       ctermfg=black     ctermbg=green    cterm=none
+hi DiffDelete    ctermfg=black     ctermbg=red      cterm=none
+hi DiffText      ctermfg=black     ctermbg=darkgray	cterm=none
+hi DiffChange    ctermfg=black     ctermbg=110      cterm=none
+
+
+" == Other ==
+hi SpellCap      ctermbg=166       ctermfg=NONE     cterm=NONE
+
 
 hi link Character       Constant
 hi link Boolean         Constant
@@ -88,44 +103,3 @@ hi link SpecialChar     Special
 hi link SpecialComment  Special
 hi link Debug           Special
 
-
-" Special for Java
-" hi link javaClassDecl    Type
-hi link javaScopeDecl         Identifier 
-hi link javaCommentTitle      javaDocSeeTag 
-hi link javaDocTags           javaDocSeeTag 
-hi link javaDocParam          javaDocSeeTag 
-hi link javaDocSeeTagParam    javaDocSeeTag 
-
-hi javaDocSeeTag              ctermfg=darkgray    ctermbg=NONE        cterm=NONE
-
-" Special for XML
-hi link xmlTag          Keyword 
-hi link xmlTagName      Conditional 
-hi link xmlEndTag       Identifier 
-
-
-" Special for HTML
-hi link htmlTag         Keyword 
-hi link htmlTagName     Conditional 
-hi link htmlEndTag      Identifier 
-
-
-" Special for Javascript
-hi link javaScriptNumber      Number 
-
-
-" == NERDtree ==
-hi NerdTreeDir   ctermfg=074       ctermbg=NONE     cterm=NONE
-hi NerdTreeUp 	 ctermfg=darkgray  ctermbg=NONE     cterm=NONE
-
-
-" == Diff ==
-hi DiffAdd       ctermfg=black     ctermbg=green    cterm=none
-hi DiffDelete    ctermfg=black     ctermbg=red      cterm=none
-hi DiffText      ctermfg=black     ctermbg=darkgray	cterm=none
-hi DiffChange    ctermfg=black     ctermbg=110      cterm=none
-
-
-" == Other ==
-hi SpellCap   ctermbg=166   ctermfg=NONE   cterm=NONE
