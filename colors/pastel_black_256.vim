@@ -30,9 +30,9 @@ hi SpecialKey       ctermfg=NONE        ctermbg=NONE        cterm=NONE
 
 
 hi Ignore           ctermfg=NONE        ctermbg=NONE        cterm=NONE
-hi Error            ctermfg=white       ctermbg=166         cterm=NONE
-hi ErrorMsg         ctermfg=white       ctermbg=166         cterm=NONE
-hi WarningMsg       ctermfg=white       ctermbg=166         cterm=NONE
+hi Error            ctermfg=white       ctermbg=009         cterm=NONE
+hi ErrorMsg         ctermfg=white       ctermbg=009         cterm=NONE
+hi WarningMsg       ctermfg=white       ctermbg=009         cterm=NONE
 
 " Message displayed in lower left, such as --INSERT--
 hi ModeMsg          ctermfg=black       ctermbg=110         cterm=BOLD
@@ -49,14 +49,14 @@ hi WildMenu         ctermfg=black       ctermbg=229         cterm=NONE
 
 " Syntax highlighting
 hi Comment          ctermfg=237         ctermbg=NONE        cterm=NONE
-hi String           ctermfg=166         ctermbg=NONE        cterm=NONE
-hi Number           ctermfg=166         ctermbg=NONE        cterm=NONE
+hi String           ctermfg=009         ctermbg=NONE        cterm=NONE
+hi Number           ctermfg=009         ctermbg=NONE        cterm=NONE
 
 hi Keyword          ctermfg=074         ctermbg=NONE        cterm=NONE
 hi PreProc          ctermfg=074         ctermbg=NONE        cterm=NONE
 hi Conditional      ctermfg=229         ctermbg=NONE        cterm=NONE
 
-hi Todo             ctermfg=166         ctermbg=NONE        cterm=NONE
+hi Todo             ctermfg=009         ctermbg=NONE        cterm=NONE
 hi Constant         ctermfg=110         ctermbg=NONE        cterm=NONE
 
 hi Identifier       ctermfg=110         ctermbg=NONE        cterm=NONE
@@ -82,7 +82,7 @@ hi DiffChange    ctermfg=black     ctermbg=110      cterm=none
 
 
 " == Other ==
-hi SpellCap      ctermbg=166       ctermfg=NONE     cterm=NONE
+hi SpellCap      ctermbg=009       ctermfg=NONE     cterm=NONE
 
 
 hi link Character       Constant
