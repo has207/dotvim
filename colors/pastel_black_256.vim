@@ -104,12 +104,7 @@ hi link SpecialComment  Special
 hi link Debug           Special
 
 " Special for Java
-hi link javaClassDecl    Type
-hi link javaScopeDecl         Identifier
-hi link javaCommentTitle      javaDocSeeTag
-hi link javaDocTags           javaDocSeeTag
-hi link javaDocParam          javaDocSeeTag
-hi link javaDocSeeTagParam    javaDocSeeTag
-
-hi javaDocSeeTag              ctermfg=237    ctermbg=NONE        cterm=NONE
-hi javaDocSeeTag              ctermfg=237    ctermbg=NONE        cterm=NONE
+hi link javaCommentTitle      Comment
+hi link javaDocTags           Comment
+hi link javaDocParam          Comment
+hi link javaDocSeeTagParam    Comment
