@@ -249,6 +249,7 @@ highlight ExtraWhitespace ctermbg=red guibg=red
 
 autocmd BufNewFile,BufRead *.proto set filetype=proto
 autocmd BufNewFile,BufRead *.borg set filetype=borg
+autocmd BufNewFile,BufRead *.gcl set filetype=gcl
 
 " Open up grep results in a quickfix window
 autocmd QuickFixCmdPost *grep* cwindow
