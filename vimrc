@@ -247,6 +247,7 @@ autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 autocmd BufRead,InsertLeave * match ExtraWhitespace /\s\+$/
 highlight ExtraWhitespace ctermbg=red guibg=red
 
+autocmd BufNewFile,BufRead BUILD set filetype=conf
 autocmd BufNewFile,BufRead *.proto set filetype=proto
 autocmd BufNewFile,BufRead *.borg set filetype=borg
 autocmd BufNewFile,BufRead *.gcl set filetype=gcl

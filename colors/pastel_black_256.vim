@@ -83,6 +83,7 @@ hi DiffChange    ctermfg=black     ctermbg=110      cterm=none
 
 " == Other ==
 hi SpellCap      ctermbg=009       ctermfg=NONE     cterm=NONE
+hi ColorColumn   ctermbg=237       ctermfg=NONE     cterm=NONE
 
 
 hi link Character       Constant
