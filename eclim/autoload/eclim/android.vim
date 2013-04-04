@@ -1,11 +1,8 @@
 " Author:  Eric Van Dewoestine
 "
-" Description: {{{
-"   see http://eclim.org/vim/java/ant/run.html
+" License: {{{
 "
-" License:
-"
-" Copyright (C) 2005 - 2011  Eric Van Dewoestine
+" Copyright (C) 2012  Eric Van Dewoestine
 "
 " This program is free software: you can redistribute it and/or modify
 " it under the terms of the GNU General Public License as published by
@@ -22,11 +19,27 @@
 "
 " }}}
 
-" Command Declarations {{{
-if !exists(":Ant")
-  command -bang -nargs=* -complete=customlist,eclim#java#ant#complete#CommandCompleteTarget
-    \ Ant :call eclim#util#MakeWithCompiler('eclim_ant', '<bang>', '<args>')
-endif
+" Script Variables {{{
+let s:command_reload = '-command android_reload'
 " }}}
+
+function! eclim#android#Reload() " {{{
+  let workspace = eclim#eclipse#ChooseWorkspace()
+  if workspace == '0'
+    return
+  endif
+
+  let port = eclim#client#nailgun#GetNgPort(workspace)
+  let result = eclim#ExecuteEclim(s:command_reload, port)
+  if type(result) != g:DICT_TYPE
+    return
+  endif
+
+  if has_key(result, 'error')
+    call eclim#util#EchoError(result.error)
+  else
+    call eclim#util#Echo(result.message)
+  endif
+endfunction " }}}
 
 " vim:ft=vim:fdm=marker
