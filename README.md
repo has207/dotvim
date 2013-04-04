@@ -21,3 +21,4 @@
     1. Remove it from .gitmodules
     2. Remove it from .git/config
     3. Run git rm --cached bundle/<plugin>
+    4. Run rm -rf .git/modules/bundle/<plugin>
