@@ -45,7 +45,10 @@ set autowrite          " Writes on make/shell commands
 set timeoutlen=250     " Time to wait for a command (after leader for example)
 set foldlevelstart=99  " Remove folds
 set formatoptions=crql
-set autochdir
+
+" Change local working directory when switching windows
+" (autochdir breaks eclim so do this instead)
+autocmd BufEnter * silent! cd | lcd %:p:h
 
 " ---------------
 " Text Format
