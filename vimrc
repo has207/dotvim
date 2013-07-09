@@ -147,11 +147,6 @@ let g:gundo_right = 1
 nnoremap <leader>u :GundoToggle<CR>
 
 " ---------------
-" SuperTab
-" ---------------
-let g:SuperTabDefaultCompletionType="context"
-
-" ---------------
 " Syntastic
 " ---------------
 let g:syntastic_enable_signs=1
@@ -232,6 +227,12 @@ let g:ScreenShellHeight = 7
 let g:ScreenShellTmuxInitArgs = '-2'
 let g:ScreenShellInitialFocus = 'shell'
 let g:ScreenShellQuitOnVimExit = 0
+
+" ---------------
+" Eclim
+" ---------------
+let g:EclimCompletionMethod = 'omnifunc'
+let g:EclimLoggingDisabled = 1
 
 " ----------------------------------------
 " Shortcuts
