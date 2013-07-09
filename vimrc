@@ -256,6 +256,7 @@ autocmd BufNewFile,BufRead BUILD set filetype=conf
 autocmd BufNewFile,BufRead *.proto set filetype=proto
 autocmd BufNewFile,BufRead *.borg set filetype=borg
 autocmd BufNewFile,BufRead *.gcl set filetype=gcl
+autocmd BufNewFile,BufRead *.json set filetype=javascript
 
 " Open up grep results in a quickfix window
 autocmd QuickFixCmdPost *grep* cwindow
