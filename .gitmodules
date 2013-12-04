@@ -61,3 +61,6 @@
 [submodule "bundle/foldutil"]
 	path = bundle/foldutil
 	url = https://github.com/vim-scripts/foldutil.vim.git
+[submodule "bundle/genutils"]
+	path = bundle/genutils
+	url = https://github.com/clones/vim-genutils.git
