@@ -64,3 +64,6 @@
 [submodule "bundle/genutils"]
 	path = bundle/genutils
 	url = https://github.com/clones/vim-genutils.git
+[submodule "bundle/tmux-navigator"]
+	path = bundle/tmux-navigator
+	url = http://github.com/christoomey/vim-tmux-navigator.git
