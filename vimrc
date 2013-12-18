@@ -168,10 +168,9 @@ nnoremap <leader>j :FufBuffer<CR>
 " ---------------
 " NERDTree
 " ---------------
-nnoremap <leader>n :NERDTree<CR>
-nnoremap <leader>nc :NERDTreeClose<CR>
-nnoremap <leader>nt :NERDTreeToggle<CR>
 let NERDTreeShowBookmarks=1
+let NERDTreeMapJumpNextSibling="]"
+let NERDTreeMapJumpPrevSibling="["
 
 " ---------------
 " Indent Guides
@@ -216,8 +215,11 @@ let g:statusline_order=[
 " ---------------
 " Taglist
 " ---------------
-let Tlist_Use_Right_Window = 1
+let Tlist_Use_Split_Window = 1
 let Tlist_Show_One_File = 1
+let Tlist_Show_Menu = 0
+let Tlist_Enable_Fold_Column = 0
+let Tlist_Display_Tag_Scope = 0
 
 " ---------------
 " Screen
@@ -261,3 +263,7 @@ autocmd BufNewFile,BufRead *.json set filetype=javascript
 
 " Open up grep results in a quickfix window
 autocmd QuickFixCmdPost *grep* cwindow
+
+" Open up NERDTree and Tlist together
+com! TT NERDTree | TlistToggle
+nnoremap <leader>n :TT<CR>

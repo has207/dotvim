@@ -73,6 +73,9 @@ hi Operator         ctermfg=229         ctermbg=NONE        cterm=NONE
 hi NerdTreeDir   ctermfg=074       ctermbg=NONE     cterm=NONE
 hi NerdTreeUp 	 ctermfg=darkgray  ctermbg=NONE     cterm=NONE
 
+" == TList ==
+hi MyTagListTagName guifg=blue ctermfg=074
+hi MyTagListTitle guifg=blue ctermfg=074
 
 " == Diff ==
 hi DiffAdd       ctermfg=black     ctermbg=green    cterm=none
