@@ -221,6 +221,12 @@ let Tlist_Show_Menu = 0
 let Tlist_Enable_Fold_Column = 0
 let Tlist_Display_Tag_Scope = 0
 
+" mendel language
+let g:tlist_gcl_settings = 'gcl;s:study;l:launch;f:feature;t:template;e:experiment;p:param;L:layer'
+
+" borg language
+let g:tlist_borg_settings = 'borg;t:template;s:service;a:allocation;j:job;p:package'
+
 " ---------------
 " Screen
 " ---------------
