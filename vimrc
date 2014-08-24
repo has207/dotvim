@@ -171,6 +171,7 @@ nnoremap <leader>j :FufBuffer<CR>
 let NERDTreeShowBookmarks=1
 let NERDTreeMapJumpNextSibling="]"
 let NERDTreeMapJumpPrevSibling="["
+let NERDTreeIgnore = ['\.pyc$', '\.class', '\.o']
 
 " ---------------
 " Indent Guides

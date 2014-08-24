@@ -154,10 +154,9 @@ update site. This release remedies that.
 Jul. 21, 2013
 -------------
 
-The focus of this release is to bring eclim fully up to date for
-Eclipse Kepler support. While the 2.3.0 release of eclim should still
-work fine on Juno, eclim will no longer officially support that
-version of Eclipse.
+The focus of this release is to bring eclim fully up to date with
+Eclipse Kepler support. The installer for eclim 2.3.0 now requires
+that you install against Kepler.
 
 - Eclim 2.3.0 (|2.3.0|) for Eclipse 4.3 (Kepler).
 
