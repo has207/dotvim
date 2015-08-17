@@ -4,7 +4,7 @@
     ln -s ~/.vim/vimrc ~/.vimrc
     cd ~/.vim
     mkdir tmp backup
-    git submodule update --init
+    git submodule update --init --recursive
 
 ## Add plugin:
 
