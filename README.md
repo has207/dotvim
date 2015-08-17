@@ -4,10 +4,7 @@
     ln -s ~/.vim/vimrc ~/.vimrc
     cd ~/.vim
     mkdir tmp backup
-    git submodle update --init
-
-    # Fix syntastic (if it's still broke):
-    cd ~/.vim/bundle/syntastic && git reset --hard 8095909dcc9
+    git submodule update --init
 
 ## Add plugin:
 
